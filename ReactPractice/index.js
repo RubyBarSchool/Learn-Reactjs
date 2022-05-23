@@ -18,11 +18,12 @@ function FooterComponent(){
     )
 }
 
-function MainContent(){
+function MainContent(props){
     return (
         <div>
         <HeaderComponent />
         <h1>I'm learning React!!</h1>
+        <h1>{props.text}</h1>
         <FooterComponent />
         </div>
     )
@@ -30,7 +31,7 @@ function MainContent(){
 
 ReactDOM.render(
     <div>
-        <MainContent />
+        <MainContent text="hihi props" />
     </div>
      ,
      document.getElementById("root")
