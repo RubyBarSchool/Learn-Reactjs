@@ -1,5 +1,27 @@
 import React, { useEffect, useState } from "react";
 // by default runs after every re-render
+
+/**
+ * useEffect(callBack,dependencies)
+ *
+ * MOUNTING
+ * - rendering
+ * - run useEffect
+ *
+ * UPDATING
+ * - rendering
+ * - run useEffect cleanup neu dependencies thay doi
+ * - run useEffect neu dependencies thay doi
+ *
+ * UNMOUNTING
+ * - run useEffect cleanup
+ *
+ * dependencies
+ * none-luon chay
+ * [] chi chay 1 lan
+ * [filters] chi chay khi filters thay doi
+ */
+
 const UseEffectBasic = () => {
   const [value, setValue] = useState(0);
 
