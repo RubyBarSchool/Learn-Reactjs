@@ -19,7 +19,7 @@ const UseStateCounter = () => {
     <>
       <h1>Regular counter</h1>
       <h1>{counter}</h1>
-      <button type="button" onClick={() => setCounter(counter - 1)}>
+      <button type="button" onClick={setCounter(counter - 1)}>
         Decrease
       </button>
       <button type="button" onClick={resetCounter}>

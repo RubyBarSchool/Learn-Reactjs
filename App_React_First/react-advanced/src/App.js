@@ -1,6 +1,6 @@
 import React from "react";
 
-import Setup from "./tutorial/2-useEffect/useEffect-basic";
+import Setup from "./tutorial/1-useState/useState-counter";
 function App() {
   return (
     <div className="container">
